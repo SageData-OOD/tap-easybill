@@ -1,0 +1,11 @@
+{
+    "type": ["null", "object"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {"type": ["null", "integer"]},
+      "name": {"type": ["null", "string"]},
+      "description": {"type": ["null", "string"]},
+      "number": {"type": ["null", "string"]},
+      "display_name": {"type": ["null", "string"]}
+    }
+}

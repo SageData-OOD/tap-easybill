@@ -1,0 +1,11 @@
+{
+    "type": ["null", "object"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {"type": ["null", "integer"]},
+      "customer_id": {"type": ["null", "integer"]},
+      "discount": {"type": ["null", "integer"]},
+      "discount_type": {"type": ["null", "string"]},
+      "position_id": {"type": ["null", "integer"]}
+    }
+}
