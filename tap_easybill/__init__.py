@@ -114,8 +114,11 @@ def requests_session(session=None):
     return session
 
 
-@backoff.on_exception(backoff.expo, EasyBillRateLimitError, max_tries=5, factor=2)
-@utils.ratelimit(10, 60)    # 10 requests per minute
+# EasyBill Plan [--Request limits--]
+# PLUS: 10 requests per minute
+# BUSINESS: 60 requests per minute
+@backoff.on_exception(backoff.expo, EasyBillRateLimitError, max_tries=10, factor=2)
+@utils.ratelimit(60, 60)
 def make_request(session, url, parameters, headers):
     response = session.get(url, headers=headers, params=parameters)
 
