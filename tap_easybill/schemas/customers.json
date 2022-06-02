@@ -75,7 +75,7 @@
       "title": {"type": ["null", "string"]},
       "vat_identifier": {"type": ["null", "string"]},
       "zip_code": {"type": ["null", "string"]},
-      "documentPdfType": {"type": ["null", "string"]},
+      "document_pdf_type": {"type": ["null", "string"]},
       "buyer_reference": {"type": ["null", "string"]},
       "foreign_supplier_number": {"type": ["null", "string"]}
     }
